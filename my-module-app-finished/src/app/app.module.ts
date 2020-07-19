@@ -7,13 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ModuleListComponent } from './module-list/module-list.component';
-
+import { LpIndicatorComponent } from './lp-indicator/lp-indicator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    ModuleListComponent
+    ModuleListComponent,
+    LpIndicatorComponent
   ],
   imports: [
     BrowserModule,

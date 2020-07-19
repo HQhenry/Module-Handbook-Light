@@ -1,0 +1,17 @@
+<h2>Module</h2>
+
+<div *ngFor="let course of courses">
+  <h3>
+    {{ course.name }}
+  </h3>
+
+  <p *ngIf="course.description">
+    Inhalt: {{ course.description }}
+  </p>
+
+
+    <app-lp-indicator
+      [course]="course"
+      (notify)="onNotify()">
+    </app-lp-indicator>
+</div>
